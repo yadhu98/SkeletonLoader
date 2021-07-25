@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.Navbar_container{
+  display: flex;
+  justify-content: center;
+  max-height: 800px;
+  max-width: 1300px;
+
+}
+.Navbar_container ul{
+  list-style-type: none;
+  display: flex;
+  width : 1000px;
+  justify-content: space-between;
+}
+.Navbar_container ul li{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.Services_container{
+  display: flex;
+  flex-direction: column;
+  width : 300px;
+  justify-content: center;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  z-index: 99;
+  background-color: aliceblue;
+  top :40px;
+  left : 25%;
+}
+.Services_container input{
+  width : 200px;
+  position: relative;
+  left : 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 25px;
+}
+.Services_container ul{
+  display: flex;
+  flex-direction: column;
+}
+.Services_container li{
+  margin-bottom: 15px;
+}
+.serviceNavContanineroff{
+  display: none;
+}
+.bodycontainer{
+  position: relative;
+  z-index: -1;
+}
+.Services_container ul{
+  list-style-type: none;
+}
+.Services_container li{
+  color: black;
+  cursor: pointer;  
+}
+.Services_container li:hover{
+  color: blue;
+}
+.divisions{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* border: 1px solid black; */
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width : 600px;
+  margin-bottom: 10px;
+  border-radius : 10px;
+  border: 1px solid grey;
+}
+.article_cont{
+  width : 600px;
+}
+.skeleton_wrapper{
+  /* border : 1px solid #ddd; */
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  position: relative;
+  overflow: hidden;
+}
+.skeleton_wrapper_prof{
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  position: relative;
+  overflow: hidden;
+
+}
+.skelton_article{
+  display: flex;
+  flex-direction: column;
+  
+}
+.skeleton_profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile_contain{
+  width:  350px;;
+}
+/* animation */
+
+.shimmer_wrapper{
+  position: absolute;
+  top : 0px;
+  left : 0px;
+  width: 100%;
+  height: 100%;
+  animation: loading 2s infinite;
+}
+.shimmer{
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transform: skewX(-20deg);
+  box-shadow: 0 0 30px 30px rgba(255,255,255,0.05);
+}
+
+@keyframes loading {
+  0% { transform: translateX(-150%)}
+  50% {transform: translateX(-60%)}
+  100% {transform: translateX(150%);}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 940px){
+  .Services_container{
+    display: flex;
+    flex-direction: column;
+    width : 200px;
+    justify-content: center;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    z-index: 99;
+    background-color: aliceblue;
+    top :40px;
+    left : 20%;
+  }
+  .Services_container input{
+    width : 150px;
+    position: relative;
+    left : 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 25px;
+  }
+}
